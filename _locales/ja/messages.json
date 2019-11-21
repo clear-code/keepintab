@@ -1,4 +1,9 @@
 {
   "extensionName": { "message": "KeepInTab + Options" },
-  "extensionDescription": { "message": "リンクから特定の条件にあてはまるtarget属性を削除し、リンクからタブやウィンドウを自動的に開かないようにします。" }
+  "extensionDescription": { "message": "リンクから特定の条件にあてはまるtarget属性を削除し、リンクからタブやウィンドウを自動的に開かないようにします。" },
+
+  "config_ignoreTarget_caption":   { "message": "以下の場合にリンクのtarget属性を削除する:" },
+  "config_ignoreTargetBlank_label": { "message": "常に新しいウィンドウまたはタブを開くもの (_blank)" },
+  "config_ignoreTargetSelfOrAncestor_label": { "message": "親フレームまたはそのフレーム自体を指すもの (_self, _parent, _top)" },
+  "config_ignoreTargetNamed_label": { "message": "それ以外の任意のフレーム名" }
 }

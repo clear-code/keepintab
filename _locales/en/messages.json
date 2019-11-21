@@ -1,4 +1,9 @@
 {
   "extensionName": { "message": "KeepInTab + Options" },
-  "extensionDescription": { "message": "Removes certain target attribute from links, which forces the browser to open every link in the current tab instead of a new tab or window." }
+  "extensionDescription": { "message": "Removes certain target attribute from links, which forces the browser to open every link in the current tab instead of a new tab or window." },
+
+  "config_ignoreTarget_caption":   { "message": "Clear target attribute if the link is:" },
+  "config_ignoreTargetBlank_label": { "message": "Opened in new tab or window always (_blank)" },
+  "config_ignoreTargetSelfOrAncestor_label": { "message": "Loaded into ancestor frames or the frame itself (_self, _parent, _top)" },
+  "config_ignoreTargetNamed_label": { "message": "Opened in named frames" }
 }

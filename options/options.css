@@ -1,0 +1,25 @@
+p, ul {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+p.sub {
+  margin-left: 2em;
+}
+
+ul p.sub {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+label[disabled="true"] {
+  opacity: 0.5;
+}
+label[disabled="true"] input {
+  opacity: 1;
+}

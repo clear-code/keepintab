@@ -11,9 +11,11 @@ browser.runtime.onMessage.addListener((message, sender) => {
       message.type != 'get-options')
     return;
 
-  return Promise.resolve({
+  return configs.$loaded.then(() => {
+    return {
     ignoreTargetBlank:          configs.ignoreTargetBlank,
     ignoreTargetSelfOrAncestor: configs.ignoreTargetSelfOrAncestor,
     ignoreTargetNamed:          configs.ignoreTargetNamed
+    };
   });
 });

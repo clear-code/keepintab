@@ -15,6 +15,7 @@
     "background": {
         "scripts": [
             "extlib/Configs.js",
+            "common.js"
             "background.js"
         ]
     },
@@ -24,6 +25,10 @@
             "js": ["keepintab.js"]
         }
     ],
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+    },
     "default_locale": "en",
     "applications": {
         "gecko": {
