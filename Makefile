@@ -17,7 +17,7 @@ format: install_dependency
 
 xpi: update_extlib install_extlib lint
 	rm -f ./*.xpi
-	zip -r -0 keepintab.xpi manifest.json keepintab.js background.js extlib LICENSE.txt -x '*/.*' >/dev/null 2>/dev/null
+	zip -r -0 keepintab.xpi manifest.json keepintab.js background.js extlib _locales LICENSE.txt -x '*/.*' >/dev/null 2>/dev/null
 
 update_extlib:
 	git submodule update --init

@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "KeepInTab + Options",
+    "name": "__MSG_extensionName__",
     "version": "1.0.3",
     "author": "Nicolas Frandeboeuf (Original), ClearCode Inc.",
-    "description": "Removes the target attribute (except for named targets) from links, which forces the browser to open every link in the current tab instead of a new tab or window .",
+    "description": "__MSG_extensionDescription__",
     "permissions": [
         "storage",
         "<all_urls>"
@@ -24,6 +24,7 @@
             "js": ["keepintab.js"]
         }
     ],
+    "default_locale": "en",
     "applications": {
         "gecko": {
             "id": "keepintab@clear-code.com",
