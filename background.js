@@ -13,9 +13,9 @@ browser.runtime.onMessage.addListener((message, sender) => {
 
   return configs.$loaded.then(() => {
     return {
-    ignoreTargetBlank:          configs.ignoreTargetBlank,
-    ignoreTargetSelfOrAncestor: configs.ignoreTargetSelfOrAncestor,
-    ignoreTargetNamed:          configs.ignoreTargetNamed
+      ignoreTargetBlank:          configs.ignoreTargetBlank,
+      ignoreTargetSelfOrAncestor: configs.ignoreTargetSelfOrAncestor,
+      ignoreTargetNamed:          configs.ignoreTargetNamed
     };
   });
 });
