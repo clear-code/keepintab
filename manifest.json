@@ -1,16 +1,32 @@
 {
     "manifest_version": 2,
-    "name": "KeepInTab",
+    "name": "KeepInTab + Options",
     "version": "1.0.3",
     "description": "Removes the target attribute (except for named targets) from links, which forces the browser to open every link in the current tab instead of a new tab or window .",
+    "permissions": [
+        "storage",
+        "<all_urls>"
+    ],
     "icons": {
         "48": "icons/icon.svg",
         "96": "icons/icon.svg"
+    },
+    "background": {
+        "scripts": [
+            "extlib/Configs.js",
+            "background.js"
+        ]
     },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["keepintab.js"]
         }
-  ]
+    ],
+    "applications": {
+        "gecko": {
+            "id": "keepintab@clear-code.com",
+            "strict_min_version": "60.0"
+        }
+    }
 }
