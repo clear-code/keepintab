@@ -1,2 +1,4 @@
 {
+  "extensionName": { "message": "KeepInTab + Options" },
+  "extensionDescription": { "message": "リンクから特定の条件にあてはまるtarget属性を削除し、リンクからタブやウィンドウを自動的に開かないようにします。" }
 }
