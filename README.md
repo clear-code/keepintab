@@ -1,5 +1,5 @@
-# KeepInTab
+# KeepInTab + Options
 WebExtension to prevent links to open in a new tab/window.
-This extension removes every target attributes from links except named targets (referring to an existing window or iframe).
+This extension removes certain target attributes from links. By default: every target attributes except named targets (referring to an existing window or iframe).
 
-This is a webextension-compatible version of [TargetKiller](https://addons.mozilla.org/fr/firefox/addon/targetkiller/) which I used for a long time !
+This is an modified version of the [KeepInTab](https://addons.mozilla.org/ja/firefox/addon/keepintab/). The only one difference is: the behavior is configurable.
