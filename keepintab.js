@@ -1,20 +1,24 @@
 let options;
 
-const SELF_OR_ANCESTOR = new Set(['_self', '_parent', '_top']);
-
 function tryRemoveTarget(element)
 {
   let currentTarget = element.getAttribute('target');
-  if (!currentTarget) {
-    return;
+  switch (currentTarget) {
+    case '_blank':
+      if (!options.ignoreTargetBlank)
+        return;
+      break;
+    case '_self':
+    case '_parent':
+    case '_top':
+      if (!options.ignoreTargetSelfOrAncestor)
+        return;
+      break;
+    default:
+      if (!currentTarget || !options.ignoreTargetNamed)
+        return;
   }
-  if ((options.ignoreTargetBlank &&
-       currentTarget == '_blank') ||
-      (options.ignoreTargetSelfOrAncestor &&
-       SELF_OR_ANCESTOR.has(currentTarget)) ||
-      options.ignoreTargetNamed) {
-    element.removeAttribute('target');
-  }
+  element.removeAttribute('target');
 }
 
 function removeTargetAttributes(parent)
